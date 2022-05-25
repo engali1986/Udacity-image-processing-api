@@ -1,0 +1,12 @@
+This API will be used to send images from Images folder then store the image name  which has been sent to the images_thumb folder
+after resizing the image with Sharp
+if the server got request for any image which has been sent before the API shall send the image from Images_thumb folder
+
+to start
+1- Open new terminal in the root directory and install dependencies ( npm install express nodemon sharp typescript ), and dev dependencies
+ (npm install --save-dev jasmine jasmine-spec-reporter supertest prettier eslint eslint-config-prettier eslint-plugin-prettier @types/node @types/express @types/jasmine @types/supertest )
+2- in the terminal type npm run start
+3- open web browser and type http://localhost:3000/?name="Filename from images folder without bextension"&width="required width to be saved in images_thumb folder"&height="required height to be saved in images_thumb folder"
+example http://localhost:3000/?name=1&width=200&height=200
+
+Thanks a lot
